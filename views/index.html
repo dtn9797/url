@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        FreeCodeCamp API Basejump: URL Shortener Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h3 class="bold">User stories:</h3>
+
+      <p>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p>
+      <p>When I visit that shortened URL, it will redirect me to my original link.</p>
+      <h3> Example creation usage:</h3>
+      <p>https://satin-creek.glitch.me/new/https://www.google.com</p>
+      <p>https://satin-creek.glitch.me/new/http://foo.com:80</p>
+      <h3>Example creation output</h3>
+      <p>{ "original_url":"http://foo.com:80", "short_url":"https://satin-creek.glitch.me/1" }</p>
+      <h3>Usage:</h3>
+      <p>https://satin-creek.glitch.me/2</p>
+      <h3>Will redirect to:</h3>
+      <p>https://www.google.com/</p>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
